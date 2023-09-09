@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPEISEKARTEUPDATE.Ende"
+             Title="Ende">
+    <ScrollView>
+    <VerticalStackLayout
+            Spacing="0"
+            Padding="10"
+            VerticalOptions="Center"
+            BackgroundColor="NavajoWhite">
+
+
+        <Label
+            Text="Danke für deine Bestellung!!"
+            BackgroundColor="Black"
+            FontSize="Title"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image
+                Source="coolertyp.webp"
+                SemanticProperties.Description="Cool"
+                HeightRequest="300"
+                HorizontalOptions="Center"
+                ZIndex="1">
+        </Image>
+
+
+    </VerticalStackLayout>
+</ScrollView>
+
+</ContentPage>

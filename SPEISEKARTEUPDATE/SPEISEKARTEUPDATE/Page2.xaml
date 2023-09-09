@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:SPEISEKARTEUPDATE"
+             x:Class="SPEISEKARTEUPDATE.Page2"
+             Title="Page2">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="0"
+            Padding="10"
+            VerticalOptions="Fill"  
+            BackgroundColor="NavajoWhite"
+            HorizontalOptions="Fill">
+
+
+            <AbsoluteLayout>
+                <Entry  AbsoluteLayout.LayoutBounds="540,175,140,40"
+                Placeholder="Zb. Arianit"
+                FontSize="Micro"
+                BackgroundColor="Black"
+                ZIndex ="2">
+    
+                </Entry>
+
+                <Entry  AbsoluteLayout.LayoutBounds="540,250,140,40"
+                Placeholder="Zb. Milankovic"
+                FontSize="Micro"
+                Background="black"
+                ZIndex ="2">
+
+                </Entry>
+
+                <Image  AbsoluteLayout.LayoutBounds="350,30,500,500"
+                Source="page2.png"
+                SemanticProperties.Description="page2"
+                HeightRequest="550"
+                HorizontalOptions="Center"
+                ZIndex="1">
+
+                </Image>
+
+                <Button AbsoluteLayout.LayoutBounds="550,550,80,40"
+                x:Name="Resume"
+                Text="Weiter"
+                SemanticProperties.Hint="Next page"
+                Clicked="navigateTo"
+                ZIndex="2"
+                HorizontalOptions="Fill"/>
+                
+            </AbsoluteLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPEISEKARTEUPDATE.Grill"
+             Title="Grill">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="0"
+            Padding="10"
+            VerticalOptions="Fill"  
+            BackgroundColor="NavajoWhite"
+            HorizontalOptions="Fill">
+
+
+            <AbsoluteLayout>
+                
+                <Button AbsoluteLayout.LayoutBounds="400,480,80,60"
+                x:Name="Burgercito"
+                Text="Zurück"
+                SemanticProperties.Hint="page back"
+                Clicked="navigateTo"
+                ZIndex="2"
+                HorizontalOptions="Fill"/>
+
+                <Image  AbsoluteLayout.LayoutBounds="350,30,500,500"
+                Source="grill.png"
+                SemanticProperties.Description="Grill"
+                HeightRequest="550"
+                HorizontalOptions="Center"
+                ZIndex="1">
+                </Image>
+
+                <Button AbsoluteLayout.LayoutBounds="570,285,102,35"
+                x:Name="CounterBtn"
+                Text="0"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                ZIndex="2"
+                HorizontalOptions="Center" />
+
+                <Button AbsoluteLayout.LayoutBounds="570,315,102,35"
+                x:Name="Zähler"
+                Text="0"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="CLS"
+                ZIndex="2"
+                HorizontalOptions="Center" />
+
+                <Button AbsoluteLayout.LayoutBounds="570,345,102,35"
+                x:Name="Dawger"
+                Text="0"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="ASS"
+                ZIndex="2"
+                HorizontalOptions="Center" />
+                
+                
+
+
+            </AbsoluteLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
